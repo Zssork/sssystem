@@ -7,3 +7,11 @@ powerline-fonts-git
 
 ## quite large better to install only what needed
 #nerd-fonts-git
+
+
+# GTK - Window themes
+nwg-look
+# maybe use https://github.com/PapirusDevelopmentTeam/papirus-icon-theme?tab=readme-ov-file#installation
+#qogir-icon-theme
+materia-gtk-theme
+#illogical-impulse-bibata-modern-classic-bin

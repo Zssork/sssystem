@@ -68,14 +68,6 @@
           "style": "diamond",
           "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
           "type": "python"
-        },
-        {
-          "background": "#ff8080",
-          "foreground": "#ffffff",
-          "trailing_diamond": "\ue0b0",
-          "style": "diamond",
-          "template": " \ue20f ",
-          "type": "status"
         }
       ],
       "type": "prompt"
