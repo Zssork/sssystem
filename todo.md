@@ -1,7 +1,7 @@
 -[x] install zsh (?)
 -[x] set up Stow and test script to setup again
 -[x] install window theme
--[ ] install app runner (use rofi)
+-[x] install app runner (use wofi)
 -[ ] install waybar
 -[ ] Wallpaper & Lock screen
 -[ ] install utility UIs
