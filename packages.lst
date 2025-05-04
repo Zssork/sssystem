@@ -5,12 +5,17 @@ unzip
 git
 less
 xclip
+stow
 
 # apps
 firefox
 vscode
 spotify-launcher
 
+# zsh (shell)
+zsh
+zsh-completions
+powerline-fonts
 
 # ui
 

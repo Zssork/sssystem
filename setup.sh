@@ -94,16 +94,12 @@ mapfile -t yay_packages < <(grep -vE '^\s*#|^\s*$' "aur_packages.lst")
 _installYayPackages "${yay_packages[@]}"
 
 # ZSH
-if _checkCommandExists "zsh"; then
-    echo ":: zsh is already installed"
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+    echo ":: Installing oh-my-zsh"
+    source "shell.sh"
+    _installZsh
 else
-    echo ":: Installing zsh"
-    zsh_packages=(
-        "zsh"
-        "zsh-completions"
-    )
-    _installYayPackages "${zsh_packages[@]}"
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    echo ":: oh-my-zsh already installed"
 fi
 
 rm -rf $download_folder
