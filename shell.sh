@@ -7,15 +7,19 @@ _installZsh(){
     done
     echo ":: Shell is now zsh."
 
-    # Install fonts
+    # install oh-my-zsh
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
+
+    ## Fix fints
     # oh-my-posh font install
+    # select Hack
 
     # stow zsh (symlink .files)
     echo ":: create symlink for zsh config"
+    rm -rf ~/.zshrc
     stow zsh
 
-    # install oh-my-zsh
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
     # Installing zsh-autosuggestions
     if [ ! -d "$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions" ]; then
