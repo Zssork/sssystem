@@ -1,10 +1,17 @@
 
 _installZsh(){
+    # Change shell to shh
+    while ! chsh -s $(which zsh); do
+        echo "ERROR: Authentication failed. Please enter the correct password."
+        sleep 1
+    done
+    echo ":: Shell is now zsh."
+
     # Installing oh-my-posh
     _installYayPackages oh-my-posh-bin
 
     # install oh-my-zsh
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" --unattended
 
     # Installing zsh-autosuggestions
     if [ ! -d "$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions" ]; then
