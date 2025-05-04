@@ -102,6 +102,15 @@ else
     echo ":: oh-my-zsh already installed"
 fi
 
+# Theme
+if [ ! -d "$HOME/.config/hypr/wallpaper" ]; then # check kinda shit right now
+    echo ":: Installing theme"
+    source "theme.sh"
+    _installTheme
+else
+    echo ":: theme already installed"
+fi
+
 rm -rf $download_folder
 
 echo "done yeah!"
