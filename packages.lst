@@ -1,0 +1,19 @@
+# utility shit
+nano
+wget
+unzip
+git
+less
+
+# apps
+firefox
+vscode
+spotify-launcher
+
+# ui
+
+# vm
+spice-vdagent
+xf86-video-qxl
+virtiofsd
+# yay: x-resize
