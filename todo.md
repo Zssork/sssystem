@@ -1,32 +1,32 @@
-- install zsh (?)
-- set up Stow and test script to setup again
-- install window theme
-- install waybar
-- install app runner
-- Wallpaper & Lock screen
-- install utility UIs
-    - Bluetooth
-    - Display config manager
-    - Network manager (+ Hotspot)
-    - Audio/Mic devices
-    - System manager
-    - Image & Video viewer
-    - Package manager browser?
-    - Kalendar
-    - System update hints
-- Screensaver
-- System toast massages
+-[x] install zsh (?)
+-[x] set up Stow and test script to setup again
+-[ ] install window theme
+-[ ] install waybar
+-[ ] install app runner
+-[ ] Wallpaper & Lock screen
+-[ ] install utility UIs
+    -[ ] Bluetooth
+    -[ ] Display config manager
+    -[ ] Network manager (+ Hotspot)
+    -[ ] Audio/Mic devices
+    -[ ] System manager
+    -[ ] Image & Video viewer
+    -[ ] Package manager browser?
+    -[ ] Kalendar
+    -[ ] System update hints
+-[ ] Screensaver
+-[ ] System toast massages
 
 Apps
-- Discord
-- Steam
-- Blender
-- Photoshop (?)
-- Pureref
-- Gittyup
-- Krita
-- Davinci Resolve
-- Thunderbird
-- Snipping tool
-- Recoring tool (Nvidia alternative)
-- Obsidian
+-[ ] Discord
+-[ ] Steam
+-[ ] Blender
+-[ ] Photoshop (?)
+-[ ] Pureref
+-[ ] Gittyup
+-[ ] Krita
+-[ ] Davinci Resolve
+-[ ] Thunderbird
+-[ ] Snipping tool
+-[ ] Recoring tool (Nvidia alternative)
+-[ ] Obsidian
