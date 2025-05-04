@@ -7,11 +7,9 @@ _installZsh(){
     done
     echo ":: Shell is now zsh."
 
-    # Installing oh-my-posh
-    _installYayPackages oh-my-posh-bin
+    # Install fonts
+    # oh-my-posh font install
 
-    # install oh-my-zsh
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" --unattended
 
     # Installing zsh-autosuggestions
     if [ ! -d "$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions" ]; then
@@ -37,10 +35,10 @@ _installZsh(){
         echo ":: fast-syntax-highlighting already installed"
     fi
 
-    _stowZsh
-}
-
-_stowZsh(){
+    # stow zsh (symlink .files)
     rm ~/.zshrc
     stow zsh
+
+    # install oh-my-zsh
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 }
