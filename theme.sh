@@ -19,9 +19,5 @@ _installTheme(){
     else
         echo ":: Andromeda theme already installed"
     fi
-    
-    #gsettings set org.gnome.desktop.interface gtk-theme "Juno"
-    #gsettings set org.gnome.desktop.wm.preferences theme "Juno"
-}
 
-_installTheme
+}

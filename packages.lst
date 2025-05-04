@@ -17,6 +17,8 @@ zsh
 zsh-completions
 
 # ui
+hyprpaper
+wofi
 
 # vm
 spice-vdagent
