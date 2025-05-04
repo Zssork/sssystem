@@ -4,3 +4,6 @@ x-resize
 #zsh 
 oh-my-posh-bin
 powerline-fonts-git
+
+## quite large better to install only what needed
+#nerd-fonts-git

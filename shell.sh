@@ -11,7 +11,7 @@ _installZsh(){
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 
-    ## Fix fints
+    ## Fix when font is wrong:
     # oh-my-posh font install
     # select Hack
 

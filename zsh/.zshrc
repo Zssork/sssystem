@@ -111,4 +111,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-eval "$(oh-my-posh init zsh --config 'https://github.com/JanDeDobbeleer/oh-my-posh/blob/main/themes/clean-detailed.omp.json')"
+eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/craver.omp.json)"
