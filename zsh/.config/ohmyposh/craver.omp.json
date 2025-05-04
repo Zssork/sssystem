@@ -5,8 +5,8 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#575656",
-          "foreground": "#D6DEEB",
+          "background": "#161616",
+          "foreground": "#2566ce",
           "properties": {
             "alpine": "\uf300",
             "arch": "\uf303",
@@ -25,7 +25,6 @@
             "windows": "\ue70f"
           },
           "style": "diamond",
-          "trailing_diamond": "\ue0b0",
           "template": " {{ if .WSL }}\ue712 on {{ end }}{{ .Icon }} ",
           "type": "os"
         },
@@ -37,7 +36,7 @@
         },
         {
           "foreground": "#ffffff",
-          "background": "#252525",
+          "background": "#161616",
           "style": "diamond",
           "template": " {{ .UserName }} ",
           "trailing_diamond": "\ue0b0",
@@ -51,7 +50,7 @@
             "style": "full"
           },
           "style": "diamond",
-          "template": " {{ .Path }} ",
+          "template": " \udb80\ude56 {{ .Path }} ",
           "type": "path"
         },
         {
