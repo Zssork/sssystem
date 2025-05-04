@@ -76,9 +76,8 @@ _installYay() {
     echo ":: yay has been installed successfully."
 }
 
-
+# Package installaiton
 mapfile -t packages < <(grep -vE '^\s*#|^\s*$' "packages.lst")
-
 _installPackages "${packages[@]}"
 
 # Install yay if needed
@@ -90,8 +89,22 @@ else
 fi
 echo
 
+# AUR package installation
 mapfile -t yay_packages < <(grep -vE '^\s*#|^\s*$' "aur_packages.lst")
 _installYayPackages "${yay_packages[@]}"
+
+# ZSH
+if _checkCommandExists "zsh"; then
+    echo ":: zsh is already installed"
+else
+    echo ":: Installing zsh"
+    zsh_packages=(
+        "zsh"
+        "zsh-completions"
+    )
+    _installYayPackages "${zsh_packages[@]}"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
 
 rm -rf $download_folder
 

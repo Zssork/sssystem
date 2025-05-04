@@ -4,11 +4,13 @@ wget
 unzip
 git
 less
+xclip
 
 # apps
 firefox
 vscode
 spotify-launcher
+
 
 # ui
 
