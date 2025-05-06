@@ -9,36 +9,33 @@ configuration {
   show-icons:             true;
 }
 
-@import "~/.cache/wal/colors-rofi-dark.rasi"
+@import "default.rasi"
 
 * {
-  bg:                     rgba(0,0,0,0.5);
-  bg-active:              rgba(0,0,0,0.8);
+  bg:                     rgba(0,0,0,0.2);
+  bg-active:              rgba(0,0,0,0.5);
   fg:                     @foreground;
-  rad:                    16px;
-  background-color:       @bg;
-  text-color:             @fg;
+  radius:                 30px;
 }
 
 window {
-  width: 35%;
-  height: 45%;
-  border: 2px solid;
-  border-color: @fg;
-  border-radius: @rad;
-  background-color: rgba(59, 59, 59, 0.3);
+    width:                  35%;
+    height:                 45%;
+    border:                 3px solid;
+    border-radius:          @radius;
+    background-color:       @bg;
 }
 
 mainbox {
     children:               [ inputbar, message, listview, mode-switcher ];
     padding:                5px;
     spacing:                20px;
-    background-color: rgba(0,0,0, 0%);
+    background-color:       transparent;
 }
 
 inputbar {
     children:               [ prompt, entry ];
-    border-radius:          @rad;
+    border-radius:          @radius;
     background-color:       @bg-active;
 }
 
@@ -49,20 +46,15 @@ prompt, entry, element selected {
 prompt {
    font:                    "Material 30";
    padding:                 1.5% 1%;
+   background-color:       transparent;
 }
 
 entry {
     blink:                  false;
     placeholder:            "Search...";
+    padding:                0% 0.5%;
     placeholder-color:      grey;
-}
-
-scrollbar {
-    margin:                      0px 4px;
-    handle-width:                8px;
-    handle-color:                @fg;
-    border-radius:               2px;
-    background-color:            @bg;
+    background-color:       transparent;
 }
 
 listview {
@@ -84,7 +76,7 @@ element {
     orientation:            horizontal;
     padding:                10px;
     spacing: 1em;
-    border-radius:          @rad;
+    border-radius:          @radius;
     margin:                 5px;
     background-color:       transparent;
 }
@@ -121,14 +113,13 @@ mode-switcher {
 }
 
 button {
-    border-radius:          @rad;
+    border-radius:          @radius;
     background-color:       @bg;
     text-color:             @fg;
 }
 
 button selected {
-    border-radius:          @rad;
-    // TODO: maybe later do this with a custom pywal16 theme to support alpha values here
+    border-radius:          @radius;
     background-color:       @bg-active;
     text-color:             @fg;
 }

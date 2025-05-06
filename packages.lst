@@ -8,6 +8,11 @@ xclip
 stow
 gum
 
+# clipboard
+wl-copy
+wl-paste
+cliphist
+
 # apps
 firefox
 vscode
