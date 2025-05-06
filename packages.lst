@@ -7,10 +7,12 @@ less
 xclip
 stow
 gum
+gnome-font-viewer
+
+# 
+networkmanager
 
 # clipboard
-wl-copy
-wl-paste
 cliphist
 
 # apps
@@ -27,6 +29,7 @@ hyprpaper
 wofi
 rofi-wayland
 rofi-emoji
+waybar
 
 # vm
 spice-vdagent

@@ -1,0 +1,85 @@
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
+// Sleek
+
+{
+    "include": "~/.config/waybar/modules",
+    "layer": "top",
+    "position": "top",
+    "height": 12,
+    "margin-left": 10,
+    "margin-right": 10,
+    "margin-top": 2,
+        
+    "modules-left": [
+        "clock",
+        "custom/separator#blank",
+        "hyprland/window"
+    ],
+    
+    "modules-center": [		
+        "hyprland/workspaces"	
+    ],
+            
+    "modules-right": [
+        "tray",
+        "custom/separator#blank",
+        "mpris",
+        "custom/separator#blank",
+        "group/motherboard",
+        "custom/separator#blank",
+        "group/laptop",
+        "custom/separator#blank", 
+        "group/audio",
+        "custom/separator#blank", 
+        "network",
+        "custom/separator#blank", 
+        "bluetooth",
+        "custom/separator#blank",
+        "custom/power",					
+    ],
+    
+    
+    // Additional format / customize modules
+
+    "hyprland/window": {
+	    "format": "{initialTitle}",
+        "icon":true,
+        "icon-size":15,
+    },
+    
+    "network": {
+        "format-wifi": "",
+        "format-ethernet":"",
+        "format-disconnected": "",
+        "tooltip-format-disconnected": "Error",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-ethernet": "{ifname} 🖧 ",
+        "on-click": "kitty nmtui"
+    },
+
+    "bluetooth": {
+        "format-on": "󰂯",
+        "format-off": "BT-off",
+        "format-disabled": "󰂲",
+        "format-connected-battery": "{device_battery_percentage}% 󰂯",
+        "format-alt": "{device_alias} 󰂯",
+        "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\n{device_address}",
+        "tooltip-format-enumerate-connected-battery": "{device_alias}\n{device_address}\n{device_battery_percentage}%",
+        "on-click-right": "blueman-manager",
+    }, 
+
+    "custom/power": {
+        "format": " ",
+        "icon-size": 20,
+      "on-click": "wlogout -C $HOME/.config/wlogout/nova.css -l $HOME/.config/wlogout/layout -b 5 -B 400 -T 400",
+        "tooltip": false,
+    },
+        
+    "clock": {
+        //"format": "{:%I:%M %p - %d/%b}", //for AM/PM
+        "format": "  {:%H:%M - %d.%m.%Y}", // 24H
+        "tooltip": false
+    },
+}

@@ -2,7 +2,9 @@
 -[x] set up Stow and test script to setup again
 -[x] install window theme
 -[x] install app runner (use wofi)
--[ ] install waybar
+-[x] Clipboard manager
+-[ ] Emoji picker (currntly bugged)
+-[x] install waybar
 -[ ] Wallpaper & Lock screen
 -[ ] install utility UIs
     -[ ] Bluetooth

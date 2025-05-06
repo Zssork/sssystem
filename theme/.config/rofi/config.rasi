@@ -5,14 +5,14 @@ configuration {
   modi:                   "drun";
   display-drun:           "";
   drun-display-format:    "{name}";
-  font:                   "JetBrainsMono Nerd Font 13";
+  font:                   "JetBrainsMono Nerd Font 13, Noto Color Emoji 12, Hack";
   show-icons:             true;
 }
 
 @import "default.rasi"
 
 * {
-  bg:                     rgba(0,0,0,0.2);
+  bg:                     rgba(0,0,0,0.3);
   bg-active:              rgba(0,0,0,0.5);
   fg:                     @foreground;
   radius:                 30px;

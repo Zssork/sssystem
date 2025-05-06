@@ -5,7 +5,7 @@ configuration {
     display-dmenu:                "";
     show-icons:                  true;
   	drun-display-format:         "{name}";
-    font:                        "JetBrainsMono Nerd Font 14";
+    font:                        "JetBrainsMono Nerd Font 14, Noto Color Emoji 12, Hack";
 }
 
 /* Config and colors ----------------------------------------------- */
@@ -31,25 +31,6 @@ mainbox {
     padding:                      32px;
 }
 
-/* Inputbar --------------------------------------------------- */
-
-// inputbar {
-//     children:               [ prompt, entry ];
-//     border-radius:          @radius;
-//     background-color:       @bg-active;
-// }
-
-// prompt, entry, element selected {
-//     vertical-align:         0.5;
-// }
-
-
-// prompt {
-//    font:                    "Material 30";
-//    padding:                 1.5% 1%;
-//    background-color:        transparent;
-// }
-
 textbox-help {
     expand:                     false;
     content:                    " Wipe - [ALT + DEL]";
@@ -71,46 +52,6 @@ textbox-icon {
     content: "  ";
 }
 
-/* Entry input ------------------------------------------------ */
-// entry {
-//     cursor:                      inherit;
-//     placeholder:                 "Search";
-//     placeholder-color:           inherit;
-
-//     border-radius:               12px;
-//     background-color:            black / 48%;
-//     text-color:                  @text;
-
-//     padding:                     16px;
-//     margin:                      0px;
-// }
-
-/* Listview --------------------------------------------------- */
-// listview {
-//     background-color:            transparent;
-//     orientation:                 vertical;
-//     children:                    [ "message", "listview" ];
-// }
-
-// /* ---- Listview ---- */
-// listview {
-//     cursor:                      "default";
-//     columns:                     1;
-//     cycle:                       true;
-//     dynamic:                     true;
-//     scrollbar:                   true;
-//     layout:                      vertical;
-//     reverse:                     false;
-//     fixed-height:                true;
-//     fixed-columns:               true;
-    
-//     background-color:            transparent;
-//     text-color:                  @foreground;
-
-//     spacing:                     12px;
-//     margin:                      0px;
-//     padding:                     0px;
-// }
 listview { 
     expand: true;
     spacing:                     5px;
@@ -138,9 +79,3 @@ element-icon {
 element-text {
     horizontal-align:            0.0;
 }
-
-// @media(max-aspect-ratio: 1.8) {
-//     element {
-//         orientation:             vertical;
-//     }
-// }
