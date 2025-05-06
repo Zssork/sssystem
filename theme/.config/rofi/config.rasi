@@ -7,15 +7,14 @@ configuration {
   drun-display-format:    "{name}";
   font:                   "JetBrainsMono Nerd Font 13";
   show-icons:             true;
-  icon-theme:             "Papirus";
 }
 
 @import "~/.cache/wal/colors-rofi-dark.rasi"
 
 * {
   bg:                     rgba(0,0,0,0.5);
+  bg-active:              rgba(0,0,0,0.8);
   fg:                     @foreground;
-  alt:                    @color2;
   rad:                    16px;
   background-color:       @bg;
   text-color:             @fg;
@@ -27,11 +26,11 @@ window {
   border: 2px solid;
   border-color: @fg;
   border-radius: @rad;
-  background-color: @bg;
+  background-color: rgba(59, 59, 59, 0.3);
 }
 
 mainbox {
-    children:               [ inputbar, listview ];
+    children:               [ inputbar, message, listview, mode-switcher ];
     padding:                5px;
     spacing:                20px;
     background-color: rgba(0,0,0, 0%);
@@ -40,13 +39,11 @@ mainbox {
 inputbar {
     children:               [ prompt, entry ];
     border-radius:          @rad;
-    background-color:       @alt;
-    background-color:       transparent;
+    background-color:       @bg-active;
 }
 
 prompt, entry, element selected {
     vertical-align:         0.5;
-    background-color:       @alt;
 }
 
 prompt {
@@ -110,11 +107,28 @@ entry {
 
 element.normal.active, element.normal.normal,
 element.alternate.active, element.alternate.normal  {
-    background-color: @bg;
-    text-color: @fg;
+    background-color:       @bg;
+    text-color:             @fg;
 }
 
 element-text, element-icon {
+    background-color:       transparent;
+    text-color:             inherit;
+}
+
+mode-switcher {
     background-color: transparent;
-    text-color:       inherit;
+}
+
+button {
+    border-radius:          @rad;
+    background-color:       @bg;
+    text-color:             @fg;
+}
+
+button selected {
+    border-radius:          @rad;
+    // TODO: maybe later do this with a custom pywal16 theme to support alpha values here
+    background-color:       @bg-active;
+    text-color:             @fg;
 }

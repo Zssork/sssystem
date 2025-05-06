@@ -21,6 +21,7 @@ zsh-completions
 hyprpaper
 wofi
 rofi-wayland
+rofi-emoji
 
 # vm
 spice-vdagent
