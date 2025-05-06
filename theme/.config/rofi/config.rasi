@@ -1,0 +1,120 @@
+// Documentation:
+// https://github.com/in0ni/rofi-wayland/blob/wayland/doc/rofi-theme.5.markdown
+
+configuration {
+  modi:                   "drun";
+  display-drun:           "";
+  drun-display-format:    "{name}";
+  font:                   "JetBrainsMono Nerd Font 13";
+  show-icons:             true;
+  icon-theme:             "Papirus";
+}
+
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+
+* {
+  bg:                     rgba(0,0,0,0.5);
+  fg:                     @foreground;
+  alt:                    @color2;
+  rad:                    16px;
+  background-color:       @bg;
+  text-color:             @fg;
+}
+
+window {
+  width: 35%;
+  height: 45%;
+  border: 2px solid;
+  border-color: @fg;
+  border-radius: @rad;
+  background-color: @bg;
+}
+
+mainbox {
+    children:               [ inputbar, listview ];
+    padding:                5px;
+    spacing:                20px;
+    background-color: rgba(0,0,0, 0%);
+}
+
+inputbar {
+    children:               [ prompt, entry ];
+    border-radius:          @rad;
+    background-color:       @alt;
+    background-color:       transparent;
+}
+
+prompt, entry, element selected {
+    vertical-align:         0.5;
+    background-color:       @alt;
+}
+
+prompt {
+   font:                    "Material 30";
+   padding:                 1.5% 1%;
+}
+
+entry {
+    blink:                  false;
+    placeholder:            "Search...";
+    placeholder-color:      grey;
+}
+
+scrollbar {
+    margin:                      0px 4px;
+    handle-width:                8px;
+    handle-color:                @fg;
+    border-radius:               2px;
+    background-color:            @bg;
+}
+
+listview {
+    layout:                 vertical;
+    lines:                  3;
+    columns:                1;
+    cycle:                  false;
+    background-color:       transparent;
+    margin:                 -5px;
+    spacing:                0px;
+    
+    fixed-height: 0;
+    border: 0px 0px 0px;
+    scrollbar: true;
+    padding: 5px 0px 0px;
+}
+
+element {
+    orientation:            horizontal;
+    padding:                10px;
+    spacing: 1em;
+    border-radius:          @rad;
+    margin:                 5px;
+    background-color:       transparent;
+}
+
+element-text, element-icon {
+    vertical-align:       0.5;
+    background-color:       inherit;
+}
+
+element-text { expand: true; }
+element-icon { size: 35px; }
+
+listview, element, element selected, element-text, element-icon {
+    cursor:                 pointer;
+}
+
+entry {
+    cursor:                 text;
+}
+
+element.normal.active, element.normal.normal,
+element.alternate.active, element.alternate.normal  {
+    background-color: @bg;
+    text-color: @fg;
+}
+
+element-text, element-icon {
+    background-color: transparent;
+    text-color:       inherit;
+}

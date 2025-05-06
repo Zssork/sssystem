@@ -1,4 +1,4 @@
-@import url('~/.config/wofi/colors.css');
+@import url('/home/fhe/.cache/wal/colors-waybar.css');
 @define-color mauve  @color9;
 @define-color red  @color9;
 @define-color lavender  @color7;

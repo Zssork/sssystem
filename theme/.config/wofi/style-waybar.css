@@ -1,4 +1,4 @@
-@import url('~/.config/wofi/colors.css');
+@import url('~/.cache/wal/colors.css');
 @define-color mauve  @color9;
 @define-color red  @color9;
 @define-color lavender  @color7;
@@ -26,6 +26,7 @@ window {
     border-radius: 0px;
     background-color: alpha(@background,.5);
 }
+
 #inner-box {
     margin: 2px;
     padding: 5px

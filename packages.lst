@@ -20,6 +20,7 @@ zsh-completions
 # ui
 hyprpaper
 wofi
+rofi-wayland
 
 # vm
 spice-vdagent

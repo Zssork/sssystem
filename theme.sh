@@ -21,4 +21,9 @@ _installTheme(){
     #     echo ":: Juno theme already installed"
     # fi
 
+
+    # app launcher:
+    # sherlock + https://github.com/iyiolacak/iyiolacak-glassmorphism-sherlock-rice/blob/main/main.css
+
+    # python-pywall16
 }
