@@ -28,8 +28,14 @@ zsh-completions
 hyprpaper
 wofi
 rofi-wayland
-rofi-emoji
 waybar
+
+# emotes & fonts
+noto-fonts-emoji
+#nerd-fonts
+# run fc-cache -fv
+wtype
+rofimoji
 
 # vm
 spice-vdagent

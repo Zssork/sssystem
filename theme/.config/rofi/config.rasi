@@ -4,8 +4,10 @@
 configuration {
   modi:                   "drun";
   display-drun:           "";
+  display-keys:           "🔑";
+  display-window:         "";
   drun-display-format:    "{name}";
-  font:                   "JetBrainsMono Nerd Font 13, Noto Color Emoji 12, Hack";
+  font:                   "JetBrainsMono Nerd Font 13, JetBrainsMono Nerd Font, Noto Color Emoji 12, Hack";
   show-icons:             true;
 }
 
@@ -83,7 +85,7 @@ element {
 
 element-text, element-icon {
     vertical-align:       0.5;
-    background-color:       inherit;
+    background-color:     inherit;
 }
 
 element-text { expand: true; }
@@ -103,6 +105,13 @@ element.alternate.active, element.alternate.normal  {
     text-color:             @fg;
 }
 
+element selected.active {
+    background-color:            @bg-active;
+    text-color:                  white;
+    border:                      2px solid;
+    border-color:                @selected;
+}
+
 element-text, element-icon {
     background-color:       transparent;
     text-color:             inherit;
@@ -116,6 +125,8 @@ button {
     border-radius:          @radius;
     background-color:       @bg;
     text-color:             @fg;
+    margin:                 2px;
+    padding:                2px;
 }
 
 button selected {
