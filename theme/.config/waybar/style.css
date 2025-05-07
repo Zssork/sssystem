@@ -21,10 +21,7 @@
 
 window#waybar {
     background: linear-gradient(0deg,rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.5) 100%);
-    /* background: transparent; */
-    /* background-image: url("./gradient.png"); */
     background-color: transparent;
-    /* background-size: 100% 100%; */
 }
 
 #waybar.empty, #waybar.tiled, #waybar.floating {
