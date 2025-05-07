@@ -6,9 +6,9 @@
     "layer": "top",
     "position": "top",
     "height": 12,
-    "margin-left": 10,
-    "margin-right": 10,
-    "margin-top": 2,
+    "margin-left": -2,
+    "margin-right": -2,
+    "margin-top": -2,
         
     "modules-left": [
         "clock",
@@ -19,6 +19,11 @@
     "modules-center": [		
         "hyprland/workspaces"	
     ],
+       
+    "image#gradient": {
+        "path": "~/.config/hypr/resources/gradient.png",
+        "size": 32,
+    },
             
     "modules-right": [
         "tray",

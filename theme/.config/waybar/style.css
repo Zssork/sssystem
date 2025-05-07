@@ -15,12 +15,16 @@
 @import '../../.cache/wal/colors-waybar.css';
 
 
-@define-color bg alpha(@background, .5);
+@define-color bg alpha(@background, .9);
 @define-color fg alpha(@foreground, .8);
-@define-color border alpha(@foreground, .2);
+@define-color border alpha(@color2, .7);
 
 window#waybar {
-    background: transparent;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.5) 100%);
+    /* background: transparent; */
+    /* background-image: url("./gradient.png"); */
+    background-color: transparent;
+    /* background-size: 100% 100%; */
 }
 
 #waybar.empty, #waybar.tiled, #waybar.floating {
@@ -42,7 +46,7 @@ tooltip {
     border-color: @border;
     border-style: solid;
     background: @bg;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
 }
 .modules-center {
     padding:7px;
