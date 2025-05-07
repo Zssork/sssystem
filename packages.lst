@@ -29,6 +29,7 @@ hyprpaper
 wofi
 rofi-wayland
 waybar
+hyprlock
 
 # emotes & fonts
 noto-fonts-emoji

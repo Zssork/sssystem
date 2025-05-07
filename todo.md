@@ -5,7 +5,8 @@
 -[x] Clipboard manager
 -[x] Emoji picker (currntly bugged)
 -[x] install waybar
--[ ] Wallpaper & Lock screen
+-[x] Wallpaper & Lock screen
+    -[ ] Use hyprlock for login https://www.reddit.com/r/hyprland/comments/1gjo3f1/hyprlock_as_login_screen/
 -[ ] install utility UIs
     -[ ] Bluetooth
     -[ ] Display config manager
