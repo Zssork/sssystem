@@ -14,8 +14,9 @@
 - Desktop
     - hyprpaper
     - pywal16
-- Hyprlock
-- Hypridle
+- Lockscreen
+    - Hyprlock
+    - Hypridle (handles inactivity) 
 - Clipboard manager
     - Rofi (SUPER+V)
     - cliphist

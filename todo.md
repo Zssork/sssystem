@@ -17,7 +17,7 @@
     -[ ] Package manager browser?
     -[ ] Kalendar
     -[ ] System update hints
--[ ] Screensaver
+-[x] Screensaver
 -[ ] System toast massages
 
 Apps
