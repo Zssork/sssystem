@@ -30,6 +30,8 @@ wofi
 rofi-wayland
 waybar
 hyprlock
+hypridle
+swww
 
 # emotes & fonts
 noto-fonts-emoji

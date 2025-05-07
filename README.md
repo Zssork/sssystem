@@ -14,6 +14,8 @@
 - Desktop
     - hyprpaper
     - pywal16
+- Hyprlock
+- Hypridle
 - Clipboard manager
     - Rofi (SUPER+V)
     - cliphist
