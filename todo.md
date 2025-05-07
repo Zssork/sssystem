@@ -3,7 +3,7 @@
 -[x] install window theme
 -[x] install app runner (use wofi)
 -[x] Clipboard manager
--[ ] Emoji picker (currntly bugged)
+-[x] Emoji picker (currntly bugged)
 -[x] install waybar
 -[ ] Wallpaper & Lock screen
 -[ ] install utility UIs
