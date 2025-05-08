@@ -69,13 +69,13 @@ _installFlatpakPackages() {
     toInstall=()
     for pkg; do
         # check if already installed
-        if flatpak list --app | awk '{print $2}' | grep -q "^$package$"; then
+        if flatpak list --app | awk '{print $2}' | grep -q "^$pkg$"; then
             echo ":: ${pkg} is already installed."
             continue
         fi
         toInstall+=("${pkg}")
     done
-
+    
     if [[ "${toInstall[@]}" == "" ]]; then
         # nothing to install 
         return
