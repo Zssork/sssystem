@@ -1,9 +1,18 @@
 self=$0
 echo $self
 
-if flatpak list --app | awk '{print $2}' | grep -q "^$package$"; then
-    echo "joar"
+
+color_config_path = /home/$USER/.cache/wal/colors-hyprland.conf
+fallback_wallpaper = /home/$USER/.config/hypr/resources/ruan-jia.jpg
+if [ ! -e "$color_config_path" ];then
+    wal -i "$fallback_wallpaper"
 fi
+
+# if ! $(gum confirm "ready to fuck the system?"); then
+#     echo "nope"
+#     exit 0
+# fi
+# echo "lets go"
 
 # WALLPAPER_DIR="$HOME/Downloads"
 # #WALLPAPERS=$(find "$WALLPAPER_DIR" -type f)

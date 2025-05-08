@@ -39,6 +39,7 @@ _installPackages() {
         toInstall+=("${pkg}")
     done
     if [[ "${toInstall[@]}" == "" ]]; then
+        # nothing to install 
         return
     fi
     printf "Package not installed: %s\n" "${toInstall[@]}"
@@ -56,6 +57,7 @@ _installYayPackages() {
         toInstall+=("${pkg}")
     done
     if [[ "${toInstall[@]}" == "" ]]; then
+        # nothing to install 
         return
     fi
     printf "Yay package not installed: %s\n" "${toInstall[@]}"
@@ -71,8 +73,19 @@ _installFlatpakPackages() {
             echo ":: ${pkg} is already installed."
             continue
         fi
-        flatpak install flathub -y "${pkg}"
+        toInstall+=("${pkg}")
     done
+
+    if [[ "${toInstall[@]}" == "" ]]; then
+        # nothing to install 
+        return
+    fi
+
+    if gum confirm "Install flatpak apps?"; then
+        for pkg in "${toInstall[@]}"; do
+            flatpak install flathub -y "${pkg}"
+        done
+    fi
 }
 
 # install yay if needed
@@ -86,6 +99,9 @@ _installYay() {
     cd $temp_path
     echo ":: yay has been installed successfully."
 }
+
+# make all scripts executable
+find ./ -type f -iname "*.sh" -exec chmod +x {} \;
 
 # Package installaiton
 mapfile -t packages < <(grep -vE '^\s*#|^\s*$' "packages.lst")
@@ -112,7 +128,11 @@ _installFlatpakPackages "${yay_packages[@]}"
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
     echo ":: Installing oh-my-zsh"
     source "shell.sh"
-    _installZsh
+
+    if gum confirm "Install zsh shell?"; then
+        _installZsh
+        exit 0 # script has to be called again
+    fi
 else
     echo ":: oh-my-zsh already installed"
 fi
