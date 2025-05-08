@@ -5,6 +5,9 @@ x-resize
 oh-my-posh-bin
 powerline-fonts-git
 
+# snipping tool
+hyprshot
+
 ## quite large better to install only what needed
 #nerd-fonts-git
 

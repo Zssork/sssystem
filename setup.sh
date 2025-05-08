@@ -39,7 +39,6 @@ _installPackages() {
         toInstall+=("${pkg}")
     done
     if [[ "${toInstall[@]}" == "" ]]; then
-        # echo "All pacman packages are already installed.";
         return
     fi
     printf "Package not installed: %s\n" "${toInstall[@]}"
@@ -57,11 +56,23 @@ _installYayPackages() {
         toInstall+=("${pkg}")
     done
     if [[ "${toInstall[@]}" == "" ]]; then
-        # echo "All packages are already installed.";
         return
     fi
     printf "Yay package not installed: %s\n" "${toInstall[@]}"
     yay -S --noconfirm "${toInstall[@]}"
+}
+
+# Install required packages
+_installFlatpakPackages() {
+    toInstall=()
+    for pkg; do
+        # check if already installed
+        if flatpak list --app | awk '{print $2}' | grep -q "^$package$"; then
+            echo ":: ${pkg} is already installed."
+            continue
+        fi
+        flatpak install flathub -y "${pkg}"
+    done
 }
 
 # install yay if needed
@@ -93,6 +104,10 @@ echo
 mapfile -t yay_packages < <(grep -vE '^\s*#|^\s*$' "aur_packages.lst")
 _installYayPackages "${yay_packages[@]}"
 
+# Flatpak package installation
+mapfile -t yay_packages < <(grep -vE '^\s*#|^\s*$' "flatpak.lst")
+_installFlatpakPackages "${yay_packages[@]}"
+
 # ZSH
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
     echo ":: Installing oh-my-zsh"
@@ -103,7 +118,7 @@ else
 fi
 
 # Theme
-if [ ! -d "$HOME/.config/hypr/wallpaper" ]; then # check kinda shit right now
+if [ ! -d "$HOME/.config/hypr/scripts" ]; then # check kinda shit right now
     echo ":: Installing theme"
     source "theme.sh"
     _installTheme

@@ -1,26 +1,28 @@
 self=$0
 echo $self
 
+if flatpak list --app | awk '{print $2}' | grep -q "^$package$"; then
+    echo "joar"
+fi
+
+# WALLPAPER_DIR="$HOME/Downloads"
+# #WALLPAPERS=$(find "$WALLPAPER_DIR" -type f)
 
 
-WALLPAPER_DIR="$HOME/Downloads"
-#WALLPAPERS=$(find "$WALLPAPER_DIR" -type f)
+# WALLPAPERS=()
+# while IFS= read -r -d '' file; do
+#     echo "found: $file"
+#     WALLPAPERS+=("$file")
+# done < <(find "$WALLPAPER_DIR" -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.webp" \) -print0)
+
+# echo "$WALLPAPER_DIR"
 
 
-WALLPAPERS=()
-while IFS= read -r -d '' file; do
-    echo "found: $file"
-    WALLPAPERS+=("$file")
-done < <(find "$WALLPAPER_DIR" -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.webp" \) -print0)
+# mapfile -d '' shuffled_wallpapers < <(printf '%s\0' "${WALLPAPERS[@]}" | shuf --zero-terminated)
 
-echo "$WALLPAPER_DIR"
-
-
-mapfile -d '' shuffled_wallpapers < <(printf '%s\0' "${WALLPAPERS[@]}" | shuf --zero-terminated)
-
-for wallpaper in "${shuffled_wallpapers[@]}"; do
-    echo "entry: \"$wallpaper\""
-done
+# for wallpaper in "${shuffled_wallpapers[@]}"; do
+#     echo "entry: \"$wallpaper\""
+# done
 
 # script_name="test.sh"
 

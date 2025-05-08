@@ -32,9 +32,11 @@ waybar
 hyprlock
 hypridle
 swww
+swaync
 
 # emotes & fonts
 noto-fonts-emoji
+ttf-jetbrains-mono-nerd
 #nerd-fonts
 # run fc-cache -fv
 wtype

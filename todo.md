@@ -21,15 +21,15 @@
 -[ ] System toast massages
 
 Apps
--[ ] Discord
+-[x] Discord
 -[ ] Steam
 -[ ] Blender
 -[ ] Photoshop (?)
 -[ ] Pureref
 -[ ] Gittyup
--[ ] Krita
+-[x] Krita
 -[ ] Davinci Resolve
--[ ] Thunderbird
--[ ] Snipping tool
+-[x] Thunderbird
+-[x] Snipping tool
 -[ ] Recoring tool (Nvidia alternative)
--[ ] Obsidian
+-[x] Obsidian

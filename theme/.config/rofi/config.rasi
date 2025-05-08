@@ -7,7 +7,7 @@ configuration {
   display-keys:           "";
   display-window:         "";
   drun-display-format:    "{name}";
-  font:                   "JetBrainsMono Nerd Font 13, JetBrainsMono Nerd Font, Noto Color Emoji 12, Hack";
+  font:                   "Hack, JetBrainsMonoNL Nerd Font Mono 12";
   show-icons:             true;
 }
 

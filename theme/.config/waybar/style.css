@@ -2,7 +2,7 @@
 /* pywal - Simple */
 
 *{
-    font-family: "JetBrainsMono Nerd Font";
+    font-family: "JetBrainsMonoNL Nerd Font";
     font-weight: bold;
     min-height: 0;
     /* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
@@ -105,6 +105,7 @@ tooltip {
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
+
 #backlight,
 #backlight-slider,
 #battery,
@@ -127,6 +128,8 @@ tooltip {
 #window,
 #wireplumber,
 #workspaces,
+#custom-notification,
+#custom-pacman,
 #custom-backlight,
 #custom-cava_mviz,
 #custom-cycle_wall,
@@ -151,10 +154,16 @@ tooltip {
 #custom-weather.snowyIcyNight,
 #custom-weather.sunnyDay {
     color: @fg;
+    /* background-color: #575353; */
     padding-top: 3px;
     padding-bottom: 3px;
     padding-right: 6px;
     padding-left: 6px;
+    margin: 4px
+}
+
+#custom-power:hover {
+    color: @color3;
 }
 
 #mode {
