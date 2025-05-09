@@ -24,6 +24,8 @@
     - Rofi (SUPER+R)
 
 <details>
-    <summary>Waybar</summary>
-
+    <summary>Terminal</summary>
+- kitty
+- zsh
+- ohmyposh
 </details>
