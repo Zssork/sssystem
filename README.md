@@ -2,13 +2,16 @@
 
 > [!CAUTION]
 > 
-> This is experimental and might cause issues
+> This is an experimental setup
 
 ## Components
 
+- Packages
+    - Check the `*.lst` files
 - Terminal
     - kitty
     - zsh
+    - zsh-autosuggestions
     - ohmyposh
 - Waybar
 - Desktop
@@ -22,10 +25,5 @@
     - cliphist
 - Application Launcher
     - Rofi (SUPER+R)
-
-<details>
-    <summary>Terminal</summary>
-- kitty
-- zsh
-- ohmyposh
-</details>
+- NotificationCenter
+    - swaync

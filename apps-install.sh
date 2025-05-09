@@ -1,4 +1,5 @@
 #!/bin/bash
+source "common.sh"
 
 # Install optional flatpak apps
 _installFlatpakPackages() {
@@ -24,6 +25,23 @@ _installFlatpakPackages() {
     fi
 }
 
-# Flatpak package installation
-mapfile -t yay_packages < <(grep -vE '^\s*#|^\s*$' "flatpak-apps.lst")
-_installFlatpakPackages "${yay_packages[@]}"
+# Flatpak app installation
+mapfile -t flatpak_apps < <(grep -vE '^\s*#|^\s*$' "apps-flatpak.lst")
+_installFlatpakPackages "${flatpak_apps[@]}"
+
+# Yay app installation
+mapfile -t yay_packages < <(grep -vE '^\s*#|^\s*$' "apps-aur.lst")
+_installYayPackages "${yay_packages[@]}"
+
+
+# install Steam with multilib
+# https://wiki.archlinux.org/title/Steam
+
+# install Blender + cuda
+# https://wiki.archlinux.org/title/Blender
+
+# install DaVinci
+# yay -S davinci-resolve
+
+# PyCharm
+# flatpak install flathub com.jetbrains.PyCharm-Community

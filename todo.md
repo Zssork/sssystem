@@ -25,8 +25,8 @@ Apps
 -[ ] Steam
 -[ ] Blender
 -[ ] Photoshop (?)
--[ ] Pureref
--[ ] Gittyup
+-[x] Pureref
+-[x] Gittyup
 -[x] Krita
 -[ ] Davinci Resolve
 -[x] Thunderbird

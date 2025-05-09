@@ -8,14 +8,13 @@ powerline-fonts-git
 # snipping tool
 hyprshot
 
+# For color management and changing wallpapers
+python-pywal16
+
 ## quite large better to install only what needed
 #nerd-fonts-git
 
-python-pywal16
-
 # GTK - Window themes
 nwg-look
-# maybe use https://github.com/PapirusDevelopmentTeam/papirus-icon-theme?tab=readme-ov-file#installation
-#qogir-icon-theme
 materia-gtk-theme
-#illogical-impulse-bibata-modern-classic-bin
+# maybe use https://github.com/PapirusDevelopmentTeam/papirus-icon-theme?tab=readme-ov-file#installation
