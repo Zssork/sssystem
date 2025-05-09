@@ -57,6 +57,9 @@ _installTheme() {
     rm -rf ~/.config/wofi
     rm -rf ~/.config/kitty
     stow theme
+    
+    # reload hyprland
+    hyprctl reload
 }
 
 ##################################################################
@@ -94,4 +97,5 @@ else
     echo ":: theme already installed"
 fi
 
+echo ":: You might need to restart your system"
 echo ":: Done yeah!"
