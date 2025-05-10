@@ -10,8 +10,11 @@ gum
 gnome-font-viewer
 flatpak
 
-# 
+# Network
 networkmanager
+
+# Audio (im using pipewire)
+pipewire-pulse
 
 # clipboard
 cliphist

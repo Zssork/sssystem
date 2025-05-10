@@ -14,6 +14,9 @@
     - zsh-autosuggestions
     - ohmyposh
 - Waybar
+- Audio
+    - pipewire
+    - GUI: pwvucontrol
 - Desktop
     - hyprpaper
     - pywal16

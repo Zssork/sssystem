@@ -31,7 +31,7 @@
         "custom/separator#blank",
         "mpris",
         "custom/separator#blank", 
-        "group/audio",
+        "pulseaudio",
         "custom/separator#blank", 
         "network",
         "custom/separator#blank", 
@@ -55,11 +55,10 @@
         "icon-size":15,
     },
     
-    "group/audio": {
+    "pulseaudio": {
         "orientation": "horizontal",
-        "modules": [
-            "pulseaudio",
-        ]	
+        // actually using pipewire but waybar only has pulseaudio :(
+        "on-click": "flatpak run com.saivert.pwvucontrol"
     },
 
     "mpris": {
@@ -67,11 +66,11 @@
         "format": "{player_icon} <i>{dynamic}</i>",
         "format-paused": "{status_icon}",
         "on-click-middle": "playerctl play-pause",
-        "on-click": "playerctl previous",
-        "on-click-right": "playerctl next",
+        "on-click": "playerctl next",
+        "on-click-right": "playerctl previous",
         "scroll-step": 5.0,
-        // "on-scroll-up": "~/.config/hypr/scripts/volume_control.sh --inc",
-        // "on-scroll-down": "~/.config/hypr/scripts/volume_control.sh --dec",
+        "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +1%",
+        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -1%",
         "smooth-scrolling-threshold": 1,
         "player-icons": {
             "chromium": "",
@@ -109,7 +108,7 @@
         "tooltip-format-disconnected": "Error",
         "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
         "tooltip-format-ethernet": "{ifname} 🖧 ",
-        "on-click": "kitty nmtui"
+        "on-click": "kitty sh -c 'unset COLORTERM;TERM=xterm-old nmtui'"
     },
 
     "bluetooth": {

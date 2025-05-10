@@ -1,3 +1,4 @@
+Setup:
 -[x] install zsh (?)
 -[x] set up Stow and test script to setup again
 -[x] install window theme
@@ -11,16 +12,16 @@
     -[ ] Bluetooth
     -[ ] Display config manager
     -[ ] Network manager (+ Hotspot)
-    -[ ] Audio/Mic devices
+    -[x] Audio/Mic devices
     -[ ] System manager
     -[ ] Image & Video viewer
     -[ ] Package manager browser?
     -[ ] Kalendar
-    -[ ] System update hints
+    -[x] System update hints
 -[x] Screensaver
 -[ ] System toast massages
 
-Apps
+Apps:
 -[x] Discord
 -[ ] Steam
 -[ ] Blender
@@ -33,3 +34,7 @@ Apps
 -[x] Snipping tool
 -[ ] Recoring tool (Nvidia alternative)
 -[x] Obsidian
+
+TODO:
+-[ ] Clean and break up hyprland config file
+-[ ] Improve 

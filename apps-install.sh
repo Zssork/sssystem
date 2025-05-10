@@ -45,3 +45,6 @@ _installYayPackages "${yay_packages[@]}"
 
 # PyCharm
 # flatpak install flathub com.jetbrains.PyCharm-Community
+
+# Vs code
+# I recommend setting the font to 'JetBrainsMonoNL Nerd Font Mono'
