@@ -6,3 +6,5 @@ md.obsidian.Obsidian
 com.obsproject.Studio
 com.github.Murmele.Gittyup
 
+# Audio controller
+com.saivert.pwvucontrol
