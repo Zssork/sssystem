@@ -17,7 +17,7 @@
     ],
     
     "modules-center": [		
-        "hyprland/workspaces"	
+        "hyprland/workspaces"
     ],
        
     "image#gradient": {
@@ -44,6 +44,10 @@
     
     
     // Additional format / customize modules
+
+    "hyprland/workspaces": {
+        "show-special": true,
+    },
 
     "hyprland/window": {
 	    "format": "{initialTitle}",

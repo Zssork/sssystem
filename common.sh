@@ -1,4 +1,4 @@
-
+#!/bin/bash
 # Check if package is installed
 _isInstalled() {
     package="$1"
