@@ -1,7 +1,6 @@
 # image/reference viewer
 pureref
 
-
 # Btrfs (snapshots)
 # grub-btrfs
 # requires xorg-xhost

@@ -2,7 +2,7 @@
 source "common.sh"
 
 # Install optional flatpak apps
-_installFlatpakPackages() {
+_installFlathubPackages() {
     toInstall=()
     for pkg; do
         # check if already installed
@@ -25,13 +25,17 @@ _installFlatpakPackages() {
     fi
 }
 
-# Flatpak app installation
-mapfile -t flatpak_apps < <(grep -vE '^\s*#|^\s*$' "apps-flatpak.lst")
-_installFlatpakPackages "${flatpak_apps[@]}"
+# Apps installation
+mapfile -t apps < <(grep -vE '^\s*#|^\s*$' "apps.lst")
+_installPackages "${apps[@]}"
 
 # Yay app installation
-mapfile -t yay_packages < <(grep -vE '^\s*#|^\s*$' "apps-aur.lst")
-_installYayPackages "${yay_packages[@]}"
+mapfile -t yay_apps < <(grep -vE '^\s*#|^\s*$' "apps-aur.lst")
+_installYayPackages "${yay_apps[@]}"
+
+# Flatpak app installation
+mapfile -t flathub_apps < <(grep -vE '^\s*#|^\s*$' "apps-flathub.lst")
+_installFlatpakPackages "${flathub_apps[@]}"
 
 
 # install Steam with multilib
@@ -48,3 +52,6 @@ _installYayPackages "${yay_packages[@]}"
 
 # Vs code
 # I recommend setting the font to 'JetBrainsMonoNL Nerd Font Mono'
+
+# Wine (native windows apps)
+# flatpak install bottles

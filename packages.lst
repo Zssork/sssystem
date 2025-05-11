@@ -23,11 +23,6 @@ pipewire-pulse
 # clipboard
 cliphist
 
-# apps
-firefox
-vscode
-spotify-launcher
-
 # zsh (shell)
 zsh
 zsh-completions

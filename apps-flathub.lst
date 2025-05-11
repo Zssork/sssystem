@@ -1,10 +1,16 @@
 # Some of my Apps :)
-com.discordapp.Discord
 org.kde.krita
 org.mozilla.Thunderbird
 md.obsidian.Obsidian
 com.obsproject.Studio
 com.github.Murmele.Gittyup
+
+# check: https://wiki.archlinux.org/title/Discord#Enabling_rich_presence_on_Flatpak
+com.discordapp.Discord
+
+# Adjust flatpak permissoins
+com.github.tchx84.Flatseal
+
 
 # Audio controller
 com.saivert.pwvucontrol

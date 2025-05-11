@@ -36,5 +36,5 @@ Apps:
 -[x] Obsidian
 
 TODO:
--[ ] Clean and break up hyprland config file
--[ ] Improve 
+-[ ] Improve Swaync control center and notifications
+-[ ] Clean and break up hyprland config file 
