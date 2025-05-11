@@ -30,3 +30,6 @@
     - Rofi (SUPER+R)
 - NotificationCenter
     - swaync
+- Snapshots
+    - btfs (filesystem)
+    - Timeshift (for creating snapshots)

@@ -4,5 +4,5 @@ pureref
 
 # Btrfs (snapshots)
 # grub-btrfs
-# requires xorg-xhost 
+# requires xorg-xhost
 timeshift

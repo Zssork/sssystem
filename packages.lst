@@ -9,6 +9,10 @@ stow
 gum
 gnome-font-viewer
 flatpak
+hyprpolkitagent
+
+# required by timeshift
+xorg-xhost
 
 # Network
 networkmanager
