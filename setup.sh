@@ -75,6 +75,9 @@ _installPackages "${packages[@]}"
 mapfile -t yay_packages < <(grep -vE '^\s*#|^\s*$' "packages-aur.lst")
 _installYayPackages "${yay_packages[@]}"
 
+# start services
+systemctl enable bluetooth.service
+
 # ZSH
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
     echo ":: Installing oh-my-zsh"

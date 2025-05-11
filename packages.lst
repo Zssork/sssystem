@@ -9,6 +9,8 @@ stow
 gum
 gnome-font-viewer
 flatpak
+
+# Sudo ui prompts
 hyprpolkitagent
 
 # required by timeshift
@@ -19,6 +21,12 @@ networkmanager
 
 # Audio (im using pipewire)
 pipewire-pulse
+pamixer
+
+# Bluetooth
+bluez
+bluez-utils
+blueman-manager
 
 # clipboard
 cliphist
