@@ -1,5 +1,49 @@
 @import url('../../.cache/wal/colors-waybar.css');
-@define-color mpris-album-art-overlay alpha(@background, 0.55);
+@import 'notifications.css';
+@import 'central_control.css';
+
+
+.widget-volume {
+    background-color: transparent;
+    padding: 8px;
+    margin: 8px;
+    margin-left: 15px;
+    border-radius: 12px;
+    color: @foreground;
+}
+
+
+trough {
+    border-radius: 20px;
+    background: transparent;
+}
+
+trough highlight {
+    padding: 5px;
+    background: @color9;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+    transition: all .7s ease;
+}
+
+trough highlight:hover {
+    padding: 5px;
+    background: @color9;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+    transition: all .7s ease;
+}
+
+trough slider {
+    background: transparent;
+}
+
+trough slider:hover {
+    background: transparent;
+}
+
+
+/* @define-color mpris-album-art-overlay alpha(@background, 0.55);
 @define-color mpris-button-hover alpha(@background, 0.50);
 @define-color text @color15;
 @define-color bg alpha(@background,.5);
@@ -56,6 +100,7 @@
 .notification widget:hover{
     background:alpha(@mycolor,.2);
 }
+
 .floating-notifications.background .notification-background .notification .notification-content,
 .control-center .notification-background .notification .notification-content {
     padding-top: 0.818rem;
@@ -355,4 +400,4 @@ trough slider:hover {
     padding: 8px;
     margin: 8px;
     border-radius: 12px;
-}
+} */

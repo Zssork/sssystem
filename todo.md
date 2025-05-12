@@ -36,5 +36,10 @@ Apps:
 -[x] Obsidian
 
 TODO:
--[ ] Improve Swaync control center and notifications
+-[x] Improve Swaync control center and notifications
+-[x] Fix Discord flickering
+-[ ] Xbox controller
+-[ ] Bottles tablet pressure control
 -[ ] Clean and break up hyprland config file 
+-[ ] Dolphin theme
+-[ ] Kde network manager?

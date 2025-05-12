@@ -17,10 +17,10 @@
 
 @define-color bg alpha(@background, .9);
 @define-color fg alpha(@foreground, .8);
-@define-color border alpha(@color2, .7);
+@define-color border alpha(@color5, .7);
 
 window#waybar {
-    background: linear-gradient(0deg,rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.5) 100%);
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.5) 100%);
     background-color: transparent;
 }
 

@@ -15,25 +15,24 @@
     "notification-inline-replies": true,
     "notification-window-width": 400,
     "notification-icon-size": 60,
-    "notification-body-image-height":  180,
-    "notification-body-image-width": 180,
+    "notification-body-image-height":  200,
+    "notification-body-image-width": 200,
     "timeout": 12,
     "timeout-low": 6,
     "timeout-critical": 1,
     "fit-to-screen": true,
     "keyboard-shortcuts": true,
-    "image-visibility": "when available",
+    "image-visibility": "when-available",
     "transition-time": 200,
     "hide-on-clear": false,
     "hide-on-action": true,
     "script-fail-notify": true,
     "widgets": [
-        "mpris",
-        "title",
-        "notifications",
+        "buttons-grid",
+		"dnd",
         "volume",
-        "backlight",
-        "buttons-grid"
+		"notifications",
+		"mpris"
     ],
     "widget-config": {
         "title": {
@@ -41,20 +40,15 @@
             "clear-all-button": true,
             "button-text": "󰆴"
         },
-        "label": {
-            "max-lines":1,
-            "text": "Notification Center!"
-        },
-
-        "mpris": {
-            "image-size": 80,
-            "image-radius": 0
-        },
         "volume": {
             "label": "󰕾 "
         },
-        "backlight": {
-            "label": "󰃟 "
+		"dnd": {
+			"text": "Do Not Disturb"
+		},
+        "mpris": {
+            "image-size": 80,
+            "image-radius": 0
         },
         "buttons-grid": {
             "actions": [
@@ -77,49 +71,11 @@
                     "label": "",
                     "command": "blueman-manager"
                 },
-                {
-                    "label":"󰤄",
-                    "command": "swaync-client -d",
-                    "type":"toggle"
-                },
-
-                {
-                    "label": "󰀟",
-                    "command": "gnome-network-displays"
-                },
 
                 {
                     "label": "󰁯",
                     "command": "timeshift-launcher"
-                },
-
-                {
-                    "label": "󰈙",
-                    "command": "kitty bash -i -c 'Docs'"
-                },
-                {
-                    "label": "",
-                    "command": "kitty bash -i -c 'Settings'"
-                    
-                },
-                {
-                    "label": "",
-                    "command": "kitty bash -i -c 'tasks'"
-
-                },
-                {
-                    "label": "",
-                    "command": "hyprlock"
-                },
-                {
-                    "label":"",
-                    "command": "reboot"
-                },
-                {
-                    "label":"",
-                    "command": "shutdown now"
                 }
-
             ]
         }
     }

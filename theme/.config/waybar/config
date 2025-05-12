@@ -12,6 +12,9 @@
         
     "modules-left": [
         "clock",
+        "date",
+        "custom/separator#blank",
+        "tray",
         "custom/separator#blank",
         "hyprland/window"
     ],
@@ -26,20 +29,19 @@
     },
             
     "modules-right": [
-        // {"name": "custom/power", "class": "module-button"},
         "custom/pacman",
         "custom/separator#blank",
         "mpris",
-        "custom/separator#blank", 
+        "custom/separator#blank",
         "pulseaudio",
-        "custom/separator#blank", 
+        "custom/separator#blank",
         "network",
-        "custom/separator#blank", 
+        "custom/separator#blank",
         "custom/notification",
         "custom/separator#blank", 
         "bluetooth",
         "custom/separator#blank",
-        "custom/power",					
+        "custom/power",
     ],
     
     
@@ -47,6 +49,12 @@
 
     "hyprland/workspaces": {
         "show-special": true,
+    },
+    
+    "tray": {
+        "spacing": 10,
+        "icon-size": 16,
+        "show-passive-items": true
     },
 
     "hyprland/window": {
@@ -94,7 +102,7 @@
     "custom/pacman": {
         "format": "󰅢 {}",
         "interval": 30,   
-        "exec": "checkupdates | wc -l",
+        "exec": "yay -Qu | wc -l",
         "exec-if": "exit 0",
         "on-click": "kitty sh -c 'yay -Syu; echo Done - Press enter to exit; read'; pkill -SIGRTMIN+8 waybar",
         "signal": 8,
@@ -134,13 +142,17 @@
     "custom/power": {
         "format": " ",
         "icon-size": 20,
-      "on-click": "wlogout -C $HOME/.config/wlogout/nova.css -l $HOME/.config/wlogout/layout -b 5 -B 400 -T 400",
+        "on-click": "wlogout -C $HOME/.config/wlogout/nova.css -l $HOME/.config/wlogout/layout -b 5 -B 400 -T 400",
         "tooltip": false,
     },
         
     "clock": {
-        //"format": "{:%I:%M %p - %d/%b}", //for AM/PM
-        "format": "  {:%H:%M - %d.%m.%Y}", // 24H
-        "tooltip": false
+        "format": "  <b>{:%H:%M}</b>",
+        "tooltip": false,
+        "escape": false
     },
+    "date": {
+        "format": "{:%d.%m.%Y}",
+        "tooltip": false
+    }
 }
