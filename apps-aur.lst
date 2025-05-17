@@ -5,3 +5,6 @@ pureref
 # grub-btrfs
 # requires xorg-xhost
 timeshift
+
+# Xbox Controller
+xpadneo-dkms

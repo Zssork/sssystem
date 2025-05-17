@@ -10,6 +10,9 @@ gum
 gnome-font-viewer
 flatpak
 
+# Fix dolphin "open with" menu
+archlinux-xdg-menu
+
 # Sudo ui prompts
 hyprpolkitagent
 
