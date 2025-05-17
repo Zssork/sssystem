@@ -112,3 +112,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/craver.omp.json)"
+
+# fix dolphin open menu issue
+XDG_MENU_PREFIX=arch- kbuildsycoca6

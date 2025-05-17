@@ -147,7 +147,7 @@
     },
         
     "clock": {
-        "format": "  <b>{:%H:%M}</b>",
+        "format": "  <b>{:%H:%M - %d.%m.%Y}</b>",
         "tooltip": false,
         "escape": false
     },
