@@ -113,5 +113,9 @@ source $ZSH/oh-my-zsh.sh
 
 eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/craver.omp.json)"
 
-# fix dolphin open menu issue
-XDG_MENU_PREFIX=arch- kbuildsycoca6
+# Mount art hdd
+if ! findmnt "/mnt/Art" > /dev/null; then
+    mount -t ntfs /dev/sda2 /mnt/Art
+fi
+
+fastfetch
