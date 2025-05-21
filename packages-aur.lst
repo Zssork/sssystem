@@ -11,10 +11,8 @@ hyprshot
 # For color management and changing wallpapers
 python-pywal16
 
-## quite large better to install only what needed
-#nerd-fonts-git
-
 # GTK - Window themes
 nwg-look
 materia-gtk-theme
-# maybe use https://github.com/PapirusDevelopmentTeam/papirus-icon-theme?tab=readme-ov-file#installation
+
+hyprswitch

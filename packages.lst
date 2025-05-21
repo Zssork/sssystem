@@ -16,7 +16,7 @@ archlinux-xdg-menu
 # Sudo ui prompts
 hyprpolkitagent
 
-# required by timeshift
+# Ask for auth (required by timeshift)
 xorg-xhost
 
 # Network
@@ -61,4 +61,3 @@ rofimoji
 spice-vdagent
 xf86-video-qxl
 virtiofsd
-# yay: x-resize

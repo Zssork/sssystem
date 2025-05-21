@@ -22,7 +22,8 @@
     - pywal16
 - Lockscreen
     - Hyprlock
-    - Hypridle (handles inactivity) 
+    - Hypridle (handles inactivity)
+    - SDDM: sddm-astronaut-theme
 - Clipboard manager
     - Rofi (SUPER+V)
     - cliphist

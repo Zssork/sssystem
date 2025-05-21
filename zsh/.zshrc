@@ -114,8 +114,13 @@ source $ZSH/oh-my-zsh.sh
 eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/craver.omp.json)"
 
 # Mount art hdd
-if ! findmnt "/mnt/Art" > /dev/null; then
-    mount -t ntfs /dev/sda2 /mnt/Art
-fi
+# if ! findmnt "/mnt/Art" > /dev/null; then
+#     mount -t ntfs /dev/sda2 /mnt/Art
+# fi
+# TODO: https://wiki.archlinux.org/title/Fstab#Auto_mount_devices
+
+# Fix dolphin open with issue
+# https://www.lorenzobettini.it/2024/05/fixing-the-empty-open-with-in-dolphin-in-hyprland/
+XDG_MENU_PREFIX=arch- kbuildsycoca6 > /dev/null 2>&1
 
 fastfetch
