@@ -113,10 +113,8 @@ source $ZSH/oh-my-zsh.sh
 
 eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/craver.omp.json)"
 
-# Mount art hdd
-# if ! findmnt "/mnt/Art" > /dev/null; then
-#     mount -t ntfs /dev/sda2 /mnt/Art
-# fi
+# Mount art ntfs hdd
+# sudo mount -t ntfs /dev/sda2 /mnt/Art
 # TODO: https://wiki.archlinux.org/title/Fstab#Auto_mount_devices
 
 # Fix dolphin open with issue
