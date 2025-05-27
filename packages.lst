@@ -37,6 +37,7 @@ cliphist
 # zsh (shell)
 zsh
 zsh-completions
+fastfetch
 
 # ui
 hyprpaper
