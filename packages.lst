@@ -29,7 +29,7 @@ pamixer
 # Bluetooth
 bluez
 bluez-utils
-blueman-manager
+blueman
 
 # clipboard
 cliphist
