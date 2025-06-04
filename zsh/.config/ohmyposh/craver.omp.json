@@ -1,5 +1,9 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "palette": {
+    "path_background": "#91ddff",
+    "path_foreground": "#100e23"
+  },
   "blocks": [
     {
       "alignment": "left",
@@ -43,8 +47,8 @@
           "type": "session"
         },
         {
-          "background": "#91ddff",
-          "foreground": "#100e23",
+          "background": "p:path_background",
+          "foreground": "p:path_background",
           "trailing_diamond": "\ue0b0",
           "properties": {
             "style": "full"
