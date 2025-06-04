@@ -4,6 +4,9 @@
 > 
 > This is an experimental setup!
 
+<img src="./img/1.png" width = "50%">
+<img src="./img/2.png" width = "50%">
+
 ## Components
 
 - Packages
@@ -45,5 +48,12 @@ You find my dotfiles [here](./theme) (i use them with [stow](https://www.gnu.org
 - https://github.com/elifouts/Dotfiles
 - https://github.com/zDyanTB/HyprNova
 - https://github.com/ensomnatt/dotfiles
+
+</details>
+<details>
+  <summary>wallpaper</summary>
+
+- [John Wallin Liberto](https://www.artstation.com/captflushgarden)
+- [Ruan Jia](https://www.artstation.com/ruanjia)
 
 </details>

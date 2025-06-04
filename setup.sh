@@ -103,5 +103,8 @@ fi
 # sddm theme:
 # https://github.com/Keyitdev/sddm-astronaut-theme/tree/master
 
+# firewall:
+# ufw
+
 echo ":: You might need to restart your system"
 echo ":: Done yeah!"
