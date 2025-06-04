@@ -4,8 +4,12 @@
 > 
 > This is an experimental setup!
 
-<img src="./img/1.png" width = "50%">
-<img src="./img/2.png" width = "50%">
+<p align="center">
+  <img src="./img/1.png" width="45%">
+&nbsp; 
+  <img src="./img/2.png" width="45%">
+</p>
+
 
 ## Components
 
