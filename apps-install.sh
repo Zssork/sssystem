@@ -23,6 +23,26 @@ _installFlathubPackages() {
             flatpak install flathub -y "${pkg}"
         done
     fi
+
+
+    if gum confirm "Setup flatpak themes?"; then
+        # sadly flatpak wont allow access to /usr/share/ so we need to copy the shit here
+        mkdir $HOME/.themes
+        mkdir $HOME/.icons
+        cp -r /usr/share/themes/Materia-dark-compact $HOME/.themes/Materia-dark-compact
+        cp -r /usr/share/themes/Materia-dark $HOME/.themes/Materia-dark
+        cp -r /usr/share/icons/breeze-dark $HOME/.icons/breeze-dark
+
+        # Use GTK and QT themes
+        sudo flatpak override --filesystem=$HOME/.themes
+        sudo flatpak override --filesystem=$HOME/.icons
+        sudo flatpak override --env=GTK_THEME=Materia-dark
+        sudo flatpak override --env=ICON_THEME=breeze-dark
+
+        sudo flatpak override --env=QT_STYLE_OVERRIDE=kvantum 
+        sudo flatpak override --filesystem=xdg-config/Kvantum:ro
+    fi
+
 }
 
 # Apps installation
@@ -44,14 +64,14 @@ _installFlatpakPackages "${flathub_apps[@]}"
 # install Blender + cuda
 # https://wiki.archlinux.org/title/Blender
 
-# install DaVinci
+## DaVinci
 # yay -S davinci-resolve
 
-# PyCharm
+## PyCharm
 # flatpak install flathub com.jetbrains.PyCharm-Community
 
-# Vs code
+## Vs code
 # I recommend setting the font to 'JetBrainsMonoNL Nerd Font Mono'
 
-# Wine (native windows apps)
+## Wine (native windows apps)
 # flatpak install bottles

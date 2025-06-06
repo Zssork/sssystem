@@ -10,6 +10,9 @@ gum
 gnome-font-viewer
 flatpak
 
+# Calculator
+bc
+
 # Fix dolphin "open with" menu
 archlinux-xdg-menu
 
