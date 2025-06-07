@@ -1,0 +1,7 @@
+[mgr]
+prepend_keymap = [
+    { on = [ "<C-d>" ], run = '''
+    shell 'ripdrag "$@" -x 2>/dev/null &' --confirm
+''', desc = "Drag and drop (ripdrag)" },
+    { on = "y", run= [ 'shell -- for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list', "yank" ] }
+]
