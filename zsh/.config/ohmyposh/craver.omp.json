@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "palette": {
-    "path_background": "#C89569",
+    "path_background": "#5A5F6C",
     "path_foreground": "#100e23"
   },
   "blocks": [

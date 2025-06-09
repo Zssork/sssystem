@@ -20,11 +20,12 @@ hyprctl hyprpaper reload ,"$image"
 wal -i "$image"
 hyprctl reload
 
+swaync-client -rs
 
 # Update sddm image
 sudo rm /usr/share/sddm/themes/sddm-astronaut-theme/Backgrounds/desktop.png
 sudo cp "$image" /usr/share/sddm/themes/sddm-astronaut-theme/Backgrounds/desktop.png
 
 # Update ohmyposh
-path_background=$(sed -n '15p' "$colors_file")
+path_background=$(sed -n '5p' "$colors_file")
 sed -i "0,/.*"path_background".*/{s/.*\"path_background\".*/    \"path_background\": \"$path_background\",/}" "$ohmyposh_config"
