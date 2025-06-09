@@ -3,5 +3,8 @@ prepend_keymap = [
     { on = [ "<C-d>" ], run = '''
     shell 'ripdrag "$@" -x 2>/dev/null &' --confirm
 ''', desc = "Drag and drop (ripdrag)" },
-    { on = "y", run= [ 'shell -- for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list', "yank" ] }
+    { on = "y", run= [ 'shell -- for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list', "yank" ] },
+    { on = ["g","a"], run= [ "cd /mnt/Art" ], desc = "Go to /mnt/Art" },
+    { on = ["g","d"], run= [ "cd /mnt/Art/Art/Daily" ], desc = "Go to Daily" },
+    { on = ["g","s"], run= [ "cd ~/Downloads" ], desc = "Go to ~/Downloads" }
 ]
