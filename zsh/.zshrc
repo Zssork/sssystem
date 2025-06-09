@@ -121,4 +121,8 @@ eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/craver.omp.json)"
 # https://www.lorenzobettini.it/2024/05/fixing-the-empty-open-with-in-dolphin-in-hyprland/
 XDG_MENU_PREFIX=arch- kbuildsycoca6 > /dev/null 2>&1
 
+export EDITOR=vim
+
+alias walset='sh ~/.config/hypr/scripts/wal-set.sh'
+
 fastfetch
