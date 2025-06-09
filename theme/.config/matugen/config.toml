@@ -1,0 +1,25 @@
+[config]
+
+[config.wallpaper]
+command = "hyprctl"
+arguments = ["hyprpaper", "reload", ","]
+set = true
+
+[templates.hyprpaper]
+input_path = 'templates/hyprpaper.conf'
+output_path = '~/.cache/matugen/hyprpaper.conf'
+
+[templates.hyprland]
+input_path = 'templates/hyprland-colors.conf'
+output_path = '~/.cache/matugen/hyprland-colors.conf'
+post_hook = 'hyprctl reload'
+
+[templates.waybar]
+input_path = 'templates/colors.css'
+output_path = '~/.cache/matugen/colors.css'
+post_hook = 'pkill -SIGUSR2 waybar'
+
+[templates.kitty]
+input_path = 'templates/kitty-colors.conf'
+output_path = '~/.cache/matugen/kitty-colors.conf'
+
