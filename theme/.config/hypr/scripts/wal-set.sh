@@ -6,7 +6,7 @@ colors_file="$HOME/.cache/wal/colors"
 
 # Input:
 relative_image=$1
-image=$(realpath $relative_image)
+image=$(realpath "$relative_image")
 
 echo "relative: $relative_image"
 echo "absolute: $image"
