@@ -1,5 +1,8 @@
 [KDE]
 WidgetStyle=kvantum
 
-[UiSettings] 
+[KShortcutsDialog Settings]
+Dialog Size=600,480
+
+[UiSettings]
 ColorScheme=MateriaDark
