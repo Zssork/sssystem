@@ -121,4 +121,8 @@ export EDITOR=vim
 
 alias walset='sh ~/.config/hypr/scripts/wal-set.sh'
 
+# python virtual environment
+export WORKON_HOME=~/.virtualenvs
+source /usr/bin/virtualenvwrapper_lazy.sh
+
 fastfetch
