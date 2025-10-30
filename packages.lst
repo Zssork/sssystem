@@ -16,6 +16,14 @@ bc
 # Fix dolphin "open with" menu
 archlinux-xdg-menu
 
+#dolphin
+konsole
+ffmpegthumbs
+icoutils
+kdegraphics-thumbnailers
+qt6-imageformats
+ark
+
 # Sudo ui prompts
 hyprpolkitagent
 
