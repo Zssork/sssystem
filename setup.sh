@@ -77,6 +77,7 @@ _installYayPackages "${yay_packages[@]}"
 
 # start services
 systemctl enable bluetooth.service
+systemctl enable NetworkManager.service
 
 # ZSH
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
