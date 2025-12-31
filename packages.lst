@@ -16,7 +16,7 @@ bc
 # Fix dolphin "open with" menu
 archlinux-xdg-menu
 
-#dolphin
+#dolphin utilities
 konsole
 ffmpegthumbs
 icoutils
