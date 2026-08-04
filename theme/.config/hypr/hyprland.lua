@@ -11,9 +11,9 @@
 -- Refer to the wiki for more information.
 -- https://wiki.hyprland.org/Configuring/
 
---###########
---## Init ###
---###########
+-- ###########
+-- ## Init ###
+-- ###########
 
 hl.exec_cmd("/home/" .. os.getenv("USER") .. "/.config/hypr/scripts/enshure-wal.sh")
 
@@ -25,9 +25,9 @@ local scripts = "/home/" .. os.getenv("USER") .. "/.config/hypr/scripts"
 require(color_config_path)
 
 
---###############
---## MONITORS ###
---###############
+-- ###############
+-- ## MONITORS ###
+-- ###############
 
 -- See https://wiki.hyprland.org/Configuring/Monitors/
 -- monitor=name,resolution,position,scale
@@ -71,9 +71,10 @@ hl.monitor({
 
 -- Default workspace setup
 
---#################
---## WORKSPACES ###
---#################
+-- #################
+-- ## WORKSPACES ###
+-- #################
+
 hl.workspace_rule({
     workspace = 1,
     monitor = "DP-2",
@@ -100,9 +101,9 @@ hl.workspace_rule({
     default = true,
 })
 
---##################
---## MY PROGRAMS ###
---##################
+-- ##################
+-- ## MY PROGRAMS ###
+-- ##################
 
 -- See https://wiki.hyprland.org/Configuring/Keywords/
 -- Set programs that you use
@@ -114,9 +115,9 @@ local menu_launcher = "rofi -modi drun,window,keys -show drun"
 local menu_window = "rofi -modi drun,window,keys -show window"
 local menu_emoji = "rofi -modi emoji:rofimoji --action copy --files emojis,nerd:rofimoji --action copy --files nerd_font -show emoji"
 
---##################
---## Layer Rules ###
---##################
+-- ##################
+-- ## Layer Rules ###
+-- ##################
 
 hl.layer_rule({
     match = {
@@ -145,9 +146,9 @@ hl.layer_rule({
     ignore_alpha = 0.5,
 })
 
---###############################
---## Application Window Rules ###
---###############################
+-- ###############################
+-- ## Application Window Rules ###
+-- ###############################
 
 --## Startup Applications
 hl.window_rule({
@@ -339,13 +340,13 @@ hl.window_rule({
     no_focus = true,
 })
 
---################
---## AUTOSTART ###
---################
+-- ################
+-- ## AUTOSTART ###
+-- ################
 
 -- My startup applications
 hl.on("hyprland.start", function () 
-  hl.exec_cmd("flatpak run org.mozilla.thunderbird_esr", { workspace = "1 silent" })
+  hl.exec_cmd("flatpak run org.mozilla.thunderbird_esr", { workspace = "9 silent" })
   hl.exec_cmd("spotify-launcher", { workspace = "10 silent"})
   hl.exec_cmd("discord", { workspace = "10 silent"})
 end)
@@ -364,9 +365,9 @@ hl.on("hyprland.start", function ()
   hl.exec_cmd("hyprswitch init --show-title --size-factor 5.5 --workspaces-per-row 5 &")
 end)
 
---############################
---## ENVIRONMENT VARIABLES ###
---############################
+-- ############################
+-- ## ENVIRONMENT VARIABLES ###
+-- ############################
 
 -- See https://wiki.hyprland.org/Configuring/Environment-variables/
 
@@ -396,9 +397,9 @@ hl.env("GMB_BACKEND", "nvidia-drm")
 hl.env("XDG_SESSION_TYPE", "wayland")
 hl.env("NVD_BACKEND", "direct")
 
---####################
---## LOOK AND FEEL ###
---####################
+-- ####################
+-- ## LOOK AND FEEL ###
+-- ####################
 -- Refer to https://wiki.hyprland.org/Configuring/Variables/
 -- https://wiki.hyprland.org/Configuring/Variables/#general
 
@@ -510,9 +511,9 @@ hl.config({
     },
 })
 
---############
---## INPUT ###
---############
+-- ############
+-- ## INPUT ###
+-- ############
 
 -- https://wiki.hyprland.org/Configuring/Variables/#input
 hl.config({
@@ -554,9 +555,9 @@ hl.device({
     sensitivity = -0.5,
 })
 
---##################
---## KEYBINDINGS ###
---##################
+-- ##################
+-- ## KEYBINDINGS ###
+-- ##################
 
 -- See https://wiki.hyprland.org/Configuring/Keywords/
 local mainMod = "SUPER"
